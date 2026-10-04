@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root & Jailbreak Rehberi - Tüm Cihazlar & İşletim Sistemleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- YASAL UYARI BANNER -->
+    <div class="legal-banner">
+        <div class="legal-content">
+            <strong>⚠️ YASAL VE ETİK UYARI</strong>
+            <p>Bu site, root, jailbreak ve cihaz unlock işlemleri hakkında <strong>eğitsel bilgi</strong> sağlamaktadır. 
+            Burada yer alan tüm işlemler <strong>kendi sorumluluğunuzda</strong> yapılmalıdır. Geliştirici, bu bilgilerin kullanımından veya sonuçlarından 
+            <strong>hiçbir şekilde sorumlu tutulmamaktadır</strong>. Garantilerin iptal olması, cihaz hasarı, veri kaybı, yasal sorunlar gibi riskleri kabul etmelisiniz.</p>
+            <button class="close-banner" onclick="closeBanner()">Anladım ✓</button>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>🔓 Root & Jailbreak Rehberi</h1>
+            <p class="subtitle">Tüm Cihazlar, Tüm İşletim Sistemleri, Tüm Yöntemler</p>
+        </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Ana Sayfa</a></li>
+                <li><a href="#quick-check">Cihaz Kontrolü</a></li>
+                <li><a href="#guides">Rehberler</a></li>
+                <li><a href="#benefits">Faydalar</a></li>
+                <li><a href="#risks">Riskler</a></li>
+                <li><a href="#legal">Yasal Bilgi</a></li>
+                <li><a href="#ai-support">AI Destek</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="container">
+
+            <!-- SECTION 1: GİRİŞ -->
+            <section id="home" class="section">
+                <div class="section-header">
+                    <h2>Hoşgeldiniz</h2>
+                    <p>Root, jailbreak ve benzer işlemler hakkında kapsamlı rehber</p>
+                </div>
+                <div class="intro-grid">
+                    <div class="intro-card">
+                        <h3>📱 Root Nedir?</h3>
+                        <p><strong>Android</strong> işletim sistemi üzerinde <strong>admin/yönetici</strong> haklarını elde etme işlemidir. Sistem dosyalarına doğrudan erişim sağlar.</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>🍎 Jailbreak Nedir?</h3>
+                        <p><strong>iOS/iPadOS</strong> işletim sistemi üzerindeki kısıtlamaları kaldırma işlemidir. App Store dışından uygulama kurulumu sağlar.</p>
+                    </div>
+                    <div class="intro-card">
+                        <h3>💻 Diğer Sistemler</h3>
+                        <p><strong>Windows, macOS, Linux</strong> gibi sistemlerde de benzer işlemler yapılabilir (parçalanmış erişim, BIOS değişiklikleri vb.)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 2: CİHAZ KONTROLÜ -->
+            <section id="quick-check" class="section">
+                <div class="section-header">
+                    <h2>🔍 Cihazınız Root/Jailbreak Olabilir Mi?</h2>
+                    <p>Adım adım kontrol yaparak uygun rehber bulun</p>
+                </div>
+
+                <div class="device-selector">
+                    <h3>Adım 1: Cihaz Türünü Seçin</h3>
+                    <div class="button-group">
+                        <button class="device-btn" onclick="selectDevice('android')">📱 Android Telefon</button>
+                        <button class="device-btn" onclick="selectDevice('iphone')">🍎 iPhone</button>
+                        <button class="device-btn" onclick="selectDevice('ipad')">📱 iPad</button>
+                        <button class="device-btn" onclick="selectDevice('windows')">🪟 Windows PC</button>
+                        <button class="device-btn" onclick="selectDevice('macos')">🍎 macOS</button>
+                        <button class="device-btn" onclick="selectDevice('linux')">🐧 Linux</button>
+                        <button class="device-btn" onclick="selectDevice('tablet')">📋 Android Tablet</button>
+                        <button class="device-btn" onclick="selectDevice('smarttv')">📺 Smart TV</button>
+                    </div>
+                </div>
+
+                <div id="device-info" class="device-info" style="display:none;"></div>
+            </section>
+
+            <!-- SECTION 3: REHBİLER -->
+            <section id="guides" class="section">
+                <div class="section-header">
+                    <h2>📚 Adım Adım Rehberler</h2>
+                    <p>Tüm cihazlar ve yöntemler için detaylı talimatlar</p>
+                </div>
+
+                <div class="guides-container" id="guides-container">
+                    <!-- Dinamik olarak doldurulacak -->
+                </div>
+            </section>
+
+            <!-- SECTION 4: FAYDALAR -->
+            <section id="benefits" class="section">
+                <div class="section-header">
+                    <h2>✅ Faydalar & Kazançlar</h2>
+                    <p>Root/Jailbreak yapmanın avantajları</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>🎨 Kişiselleştirme</h3>
+                        <p>Sistem teması, simgeler, yazı tipleri tamamen değiştirebilirsiniz. İşletim sistemini kendi zevkinize göre özelleştirebilirsiniz.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>⚡ Performans Optimizasyonu</h3>
+                        <p>Sistem dosyalarını düzenleyerek cihazın hızını artırabilirsiniz. Gereksiz servisleri devre dışı bırakabilirsiniz.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>🔐 Gelişmiş Güvenlik</h3>
+                        <p>Firewall, ayrıntılı güvenlik ayarları, uygulama izin kontrolü yapabilirsiniz. Sistem düzeyinde koruma ekleyebilirsiniz.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>📦 Üçüncü Taraf Uygulamalar</h3>
+                        <p>App Store/Play Store dışından uygulama kurabilirsiniz. Modlanmış veya premium uygulamalara erişim sağlayabilirsiniz.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>🛠️ Sistem Kontrolü</h3>
+                        <p>Sistem dosyalarını doğrudan değiştirebilirsiniz. Yazılım kayıtlarına erişebilirsiniz. Hata ayıklamayı derinlemesine yapabilirsiniz.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>📱 Geliştirici Araçları</h3>
+                        <p>Derin geliştirici modu ve ileri özeliklere erişim sağlayabilirsiniz. Sistem API'lerine doğrudan erişebilirsiniz.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: RİSKLER -->
+            <section id="risks" class="section">
+                <div class="section-header">
+                    <h2>⚠️ Riskler & Dezavantajlar</h2>
+                    <p>Root/Jailbreak yapmanın tehlikeleri</p>
+                </div>
+
+                <div class="risks-grid">
+                    <div class="risk-card risk-critical">
+                        <h3>🔴 CİHAZ HASAR RİSKİ</h3>
+                        <p>Hatalı işlem cihazı tamamen çalışamaz hale getirebilir. "Brick" durumunda onarım pahalı olabilir.</p>
+                        <span class="risk-level">KRİTİK</span>
+                    </div>
+                    <div class="risk-card risk-critical">
+                        <h3>🔴 GARANTİ İPTAL</h3>
+                        <p>Yapıcısının garantisi tamamen geçersiz hale gelir. Resmi destek almak mümkün olmaz.</p>
+                        <span class="risk-level">KRİTİK</span>
+                    </div>
+                    <div class="risk-card risk-high">
+                        <h3>🟠 YASAL RİSKLER</h3>
+                        <p>Bazı bölgelerde cihaz değiştirmek, modlanmış yazılım kullanmak yasal problem olabilir. Telif haklarını ihlal edebilirsiniz.</p>
+                        <span class="risk-level">YÜKSEK</span>
+                    </div>
+                    <div class="risk-card risk-high">
+                        <h3>🟠 GÜVENLİK AÇIĞI</h3>
+                        <p>Sistem korumaları kaldırılır. Kötü amaçlı yazılım, virüs, trojanlara karşı savunmasız hale gelirsiniz.</p>
+                        <span class="risk-level">YÜKSEK</span>
+                    </div>
+                    <div class="risk-card risk-high">
+                        <h3>🟠 VERİ KAYBÜ</h3>
+                        <p>İşlem sırasında tüm verileriniz silinebilir. Yedek almamışsanız kalıcı kayıp yaşayabilirsiniz.</p>
+                        <span class="risk-level">YÜKSEK</span>
+                    </div>
+                    <div class="risk-card risk-medium">
+                        <h3>🟡 UYGULAMALAR ÇALIŞMAYABİLİR</h3>
+                        <p>Bankacılık uygulamaları, oyunlar, ödeme sistemleri root'lu cihazlarda çalışmayabilir. Bazı hizmetler erişim engeli koyabilir.</p>
+                        <span class="risk-level">ORTA</span>
+                    </div>
+                    <div class="risk-card risk-medium">
+                        <h3>🟡 PERFORMANS SORUNU</h3>
+                        <p>Yanlış ayarlar yapılırsa sistem daha yavaş çalışabilir. Pil tüketimi artabilir.</p>
+                        <span class="risk-level">ORTA</span>
+                    </div>
+                    <div class="risk-card risk-medium">
+                        <h3>🟡 GÜNCELLEME SORUNLARI</h3>
+                        <p>Sistem güncellemeleri engel olabilir. Yeni sürümlere geçmek zorlaşabilir.</p>
+                        <span class="risk-level">ORTA</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: YASAL BİLGİ -->
+            <section id="legal" class="section">
+                <div class="section-header">
+                    <h2>⚖️ Yasal Bilgi & Sorumluluk</h2>
+                    <p>Hukuki açıdan bilinmesi gerekenler</p>
+                </div>
+
+                <div class="legal-content-detailed">
+                    <div class="legal-box">
+                        <h3>📋 Yasal Durum</h3>
+                        <p>Root/Jailbreak işleminin yasal durumu <strong>bölgeye, ülkeye ve yasaya</strong> bağlı olarak değişir:</p>
+                        <ul>
+                            <li><strong>ABD & Çoğu Ülke:</strong> Kişisel kullanım için legal kabul edilir</li>
+                            <li><strong>AB:</strong> Dijital haklar yasası kapsamında sınırlı olabilir</li>
+                            <li><strong>Türkiye:</strong> Yasal açıdan belirsiz; resmi açıklama yoktur</li>
+                            <li><strong>Bazı Ülkeler:</strong> Tamamen yasak olabilir</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-box">
+                        <h3>⚠️ Telif Hakkı & Lisans</h3>
+                        <p>Yazılım lisans sözleşmesini ihlal edebilirsiniz. Resmi yazılımı değiştirmek telif haklarını ihlal edebilir. Modlanmış ROM'lar yasadışı sayılabilir.</p>
+                    </div>
+
+                    <div class="legal-box">
+                        <h3>🔐 Güvenlik & Siber Güvenlik Kanunları</h3>
+                        <p>Cihazınızı değiştirdikten sonra kötü amaçlı yazılım yayarsanız ya da başkasının cihazını etkilersem suç sayılabilir. Hacker yasalarına tabi olabilirsiniz.</p>
+                    </div>
+
+                    <div class="legal-box">
+                        <h3>🏢 Şirket Politikaları</h3>
+                        <p>İşyerinde root'lu cihaz kullanmak yasak olabilir. Resmi ağlara bağlanamayabilirsiniz. Bazı şirketler bu cihazları engelleyebilir.</p>
+                    </div>
+
+                    <div class="legal-box">
+                        <h3>💬 Bu Site'nin Sorumluluğu</h3>
+                        <p><strong>Bu site ve geliştirici şu konulardan sorumlu DEĞİLDİR:</strong></p>
+                        <ul>
+                            <li>Cihaz hasarı veya arızalanması</li>
+                            <li>Veri kaybı</li>
+                            <li>Finansal kayıplar</li>
+                            <li>Yasal sorunlar</li>
+                            <li>Güvenlik ihlalleri</li>
+                            <li>Diğer kişilerin cihazlarına yapılan işlemler</li>
+                        </ul>
+                        <p class="highlight">TÜM SORUMLULUK KULLANICIYA AİTTİR.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 7: AI DESTEK -->
+            <section id="ai-support" class="section">
+                <div class="section-header">
+                    <h2>🤖 AI Destekli Yardımcı</h2>
+                    <p>Sorularınızı sorun, yapay zeka cevapla</p>
+                </div>
+
+                <div class="ai-assistant">
+                    <div class="ai-info">
+                        <p>Cihazınız hakkında sorular sorun ve çeşitli root/jailbreak yöntemleri için önerilerde bulunun. AI, teknik durumunuza göre en uygun rehberi sunacaktır.</p>
+                    </div>
+
+                    <div class="ai-form">
+                        <h3>Cihazınız Hakkında Bilgi Verin</h3>
+                        
+                        <div class="form-group">
+                            <label>Cihaz Türü:</label>
+                            <select id="ai-device-type">
+                                <option value="">Seçin...</option>
+                                <option value="android-phone">Android Telefon</option>
+                                <option value="android-tablet">Android Tablet</option>
+                                <option value="iphone">iPhone</option>
+                                <option value="ipad">iPad</option>
+                                <option value="windows">Windows PC</option>
+                                <option value="macos">macOS</option>
+                                <option value="linux">Linux</option>
+                                <option value="smarttv">Smart TV</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Marka & Model (Örn: Samsung Galaxy A12):</label>
+                            <input type="text" id="ai-device-model" placeholder="Cihazın tam adını yazın...">
+                        </div>
+
+                        <div class="form-group">
+                            <label>İşletim Sistemi Versiyonu (Örn: Android 12, iOS 16):</label>
+                            <input type="text" id="ai-os-version" placeholder="Sürümü yazın...">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Amacınız:</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="purpose" value="customization"> Kişiselleştirme</label>
+                                <label><input type="checkbox" name="purpose" value="performance"> Performans</label>
+                                <label><input type="checkbox" name="purpose" value="apps"> Uygulama Kurma</label>
+                                <label><input type="checkbox" name="purpose" value="security"> Güvenlik</label>
+                                <label><input type="checkbox" name="purpose" value="development"> Geliştirme</label>
+                                <label><input type="checkbox" name="purpose" value="other"> Diğer</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teknik Seviye:</label>
+                            <select id="ai-tech-level">
+                                <option value="">Seçin...</option>
+                                <option value="beginner">Başlangıç (İlk defa yapacağım)</option>
+                                <option value="intermediate">Orta (Daha önce bunu yaptım)</option>
+                                <option value="advanced">İleri (Teknik bilgim var)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ek Sorular/Endişeler:</label>
+                            <textarea id="ai-custom-question" placeholder="Burada spesifik sorularınızı yazabilirsiniz..." rows="4"></textarea>
+                        </div>
+
+                        <button class="btn-primary" onclick="askAI()">🤖 AI'ye Sor & Rehber Al</button>
+                    </div>
+
+                    <div id="ai-response" class="ai-response" style="display:none;"></div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>⚖️ DİKKAT:</strong> Bu site eğitsel amaçlı olarak oluşturulmuştur. Tüm sorumluluk kullanıcıya aittir.</p>
+            <p>© 2024 Root & Jailbreak Rehberi | <a href="#legal">Yasal Uyarı</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
