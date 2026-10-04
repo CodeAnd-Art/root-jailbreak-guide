@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Destek | Root & Jailbreak Portalı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-alert">
+    <div class="container top-alert-inner">
+      <div>
+        <strong>⚠️ AI önerisi:</strong>
+        AI, rehber önerisi sunar; nihai sorumluluk kullanıcıya aittir. Kesin teknik işlem adımı vermez.
+      </div>
+      <button class="ghost-button" type="button" data-close-alert>Kapat</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">
+        <span class="brand-mark">R</span>
+        <div>
+          <strong>Root Guide</strong>
+          <small>Premium Rehber Portalı</small>
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Ana menü">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="guides.html">Rehberler</a>
+        <a href="assistant.html" class="active">AI Destek</a>
+        <a href="legal.html">Yasal Uyarı</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="section">
+      <div class="container assistant-layout">
+        <div class="assistant-form-wrap shadow-soft">
+          <div class="section-head left-align">
+            <span class="eyebrow">AI analizi</span>
+            <h1>Cihaz bilgilerinizi girin</h1>
+          </div>
+
+          <label class="field">
+            <span>Cihaz türü</span>
+            <select id="deviceType">
+              <option value="android">Android Telefon</option>
+              <option value="iphone">iPhone</option>
+              <option value="ipad">iPad</option>
+              <option value="windows">Windows PC</option>
+              <option value="macos">macOS</option>
+              <option value="linux">Linux</option>
+              <option value="smarttv">Smart TV</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Marka ve model</span>
+            <input id="deviceModel" type="text" placeholder="Örn: Samsung Galaxy A52, iPhone 14, Dell XPS" />
+          </label>
+
+          <label class="field">
+            <span>İşletim sistemi sürümü</span>
+            <input id="osVersion" type="text" placeholder="Örn: Android 13, iOS 17, Windows 11" />
+          </label>
+
+          <label class="field">
+            <span>Amacınız</span>
+            <div class="checkbox-row">
+              <label><input type="checkbox" value="kişiselleştirme" /> Kişiselleştirme</label>
+              <label><input type="checkbox" value="performans" /> Performans</label>
+              <label><input type="checkbox" value="uygulama" /> Uygulama</label>
+              <label><input type="checkbox" value="geliştirme" /> Geliştirme</label>
+            </div>
+          </label>
+
+          <label class="field">
+            <span>Teknik seviye</span>
+            <select id="techLevel">
+              <option value="başlangıç">Başlangıç</option>
+              <option value="orta">Orta</option>
+              <option value="ileri">İleri</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Ek not / endişe</span>
+            <textarea id="userNote" rows="4" placeholder="Örn: Cihazımın garanti süresi var, yedek almak istiyorum, legal durum için uyarı istiyorum."></textarea>
+          </label>
+
+          <button class="primary-button" type="button" id="analyzeButton">AI Analizi Yap</button>
+        </div>
+
+        <aside class="assistant-result shadow-soft" id="assistantResult">
+          <div class="section-head left-align">
+            <span class="eyebrow">Sonuç</span>
+            <h2>Değerlendirme</h2>
+          </div>
+          <p>Bilgileriniz girildiğinde, uygunluk, risk ve güvenli yaklaşım hakkında özet sonuç burada görünür.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Root Guide</strong>
+        <p>Yasal, etik ve güvenlik odaklı rehber.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="guides.html">Rehberler</a>
+        <a href="legal.html">Yasal Uyarı</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
